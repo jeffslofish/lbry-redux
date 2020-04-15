@@ -32,6 +32,7 @@ type PublishState = {
   licenseUrl: string,
   tags: Array<string>,
   optimize: boolean,
+  useLBRYUploader: boolean,
 };
 
 const defaultState: PublishState = {
@@ -66,6 +67,7 @@ const defaultState: PublishState = {
   publishSuccess: false,
   publishError: undefined,
   optimize: false,
+  useLBRYUploader: false,
 };
 
 export const publishReducer = handleActions(
